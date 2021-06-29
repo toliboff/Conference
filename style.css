@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Lato', sans-serif;
+  font-size: 1.2rem;
   color: #272a31;
 }
 
@@ -16,22 +17,69 @@ ul {
   list-style-type: none;
 }
 
+h2 {
+  font-size: 2rem;
+}
+
 .centered {
   text-align: center;
 }
 
+.header {
+  position: relative;
+}
+
+.settings {
+  display: none;
+}
+
 .mobile-nav {
+  padding: 20px;
+  font-size: 2.5rem;
+  position: fixed;
+}
+
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #272a31f1;
+  padding: 25px;
+}
+
+.mobile-menu li {
+  margin: 15px 0;
+}
+
+.close {
+  color: #fff;
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.mobile-menu a {
+  color: #fff;
+  font-size: 3rem;
   padding: 15px;
-  font-size: 1.5em;
+  margin: 15px;
+}
+
+.current {
+  color: #ec5242;
+  font-size: 5rem;
 }
 
 .home {
   display: flex;
   flex-direction: column;
-  padding: 55px 15px;
+  padding: 75px 20px;
   color: #4e4e50;
   background: url(./images/background.png) no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .page-title,
@@ -152,7 +200,7 @@ ul {
 }
 
 .speaker-list li {
-  margin: 15px;
+  margin: 20px;
   display: flex;
 }
 
@@ -190,7 +238,7 @@ ul {
 
 /* CONTACT SECTION */
 .contact {
-  padding: 50px 25px;
+  padding: 75px 25px;
   background: url("./images/background.png");
 }
 
@@ -321,6 +369,7 @@ ul {
   padding: 30px 15px;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
 }
