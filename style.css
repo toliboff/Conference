@@ -16,6 +16,10 @@ ul {
   list-style-type: none;
 }
 
+.centered {
+  text-align: center;
+}
+
 .mobile-nav {
   padding: 15px;
   font-size: 1.5em;
@@ -130,4 +134,56 @@ ul {
   font-size: 1.5rem;
   padding: 2rem 3rem;
   text-align: center;
+}
+
+/* SPEAKERS SECTION */
+.speakers {
+  padding: 25px 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.speakers h2 {
+  margin: 25px 0 10px;
+}
+
+.speaker-list {
+  margin: 25px 0;
+}
+
+.speaker-list li {
+  margin: 0 15px;
+  display: flex;
+}
+
+.speaker {
+  display: flex;
+  flex-direction: column;
+}
+
+.speaker-avatar {
+  align-self: flex-start;
+  padding: 20px;
+  width: 30%;
+  background: url("/images/transparent_bg.png") no-repeat;
+  background-size: 50%;
+}
+
+.speaker-position {
+  color: #ec5242;
+  font-style: italic;
+  padding: 5px 0;
+}
+
+.more-btn {
+  padding: 15px;
+  font-size: 1.3rem;
+  border: 1px solid #d3d3d3;
+  background-color: #fff;
+  border-radius: 3px;
+}
+
+.more-btn i {
+  color: #ec5242;
+  margin-left: 5px;
 }
