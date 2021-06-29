@@ -9,6 +9,7 @@
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 ul {
@@ -18,4 +19,43 @@ ul {
 .mobile-nav {
   padding: 15px;
   font-size: 1.5em;
+}
+.home {
+  display: flex;
+  flex-direction: column;
+  padding: 55px 15px;
+  color: #4e4e50;
+  background: url(./images/background.png) no-repeat;
+  background-size: cover;
+}
+
+.page-title,
+.page-title span {
+  font-size: 3.3rem;
+  font-weight: 900;
+  line-height: 1.1em;
+  color: #ec5242;
+  display: flex;
+  flex-direction: column;
+}
+
+.moto {
+  order: -1;
+  color: #ec5242;
+}
+
+.intro {
+  padding: 20px;
+  line-height: 1.5rem;
+  color: #4e4e50;
+  border: 3px solid #fff;
+  background-color: #f3f0f0;
+  margin: 25px 0;
+}
+
+.date {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #4e4e50;
+  margin: 10px 0;
 }
