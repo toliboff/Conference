@@ -1,0 +1,21 @@
+/* colors: #272a31-dark, #ec5242 - orange, #d3d3d3 - lightgrey */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  color: #272a31;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.mobile-nav {
+  padding: 15px;
+  font-size: 1.5em;
+}
