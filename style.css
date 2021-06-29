@@ -315,3 +315,22 @@ ul {
   width: auto;
   margin: 15px;
 }
+
+/* FOOTER */
+.footer {
+  padding: 30px 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.copyright {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.copyright span {
+  margin: 3px;
+}
