@@ -227,3 +227,61 @@ ul {
   padding: 20px 50px;
   width: 90%;
 }
+
+/* PAST CONFERENCES SECTION */
+.past-conference {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 15px;
+}
+
+.past-conference h2 { 
+  margin: 15px;
+}
+
+.past-conference p { 
+  margin: 15px;
+  font-size: 1.5rem;
+  width: 80%;
+}
+.past-conf {
+  width: 90%;
+  margin: 25px 0;
+}
+
+.past-conf li {
+  margin: 25px 15px;
+  width: 100%;
+  padding: 15%;
+  color: #fff;
+}
+
+.past-conf li:nth-child(1) {
+  background:
+    linear-gradient(
+      rgba(255, 0, 0, 0.45),
+      rgba(255, 0, 0, 0.45)
+    ),
+    url("./images/WIA_2019.jpg");
+}
+
+.past-conf li:nth-child(2) {
+  background:
+    linear-gradient(
+      rgba(255, 0, 0, 0.45),
+      rgba(255, 0, 0, 0.45)
+    ),
+    url("./images/WIA_2020-1.jpg");
+}
+
+.past-conf h3 {
+  color: #fff;
+  font-size: 3rem;
+  margin: 15px;
+}
+
+.past-conf p {
+  color: #fff;
+  font-size: 1.5rem;
+}
