@@ -152,7 +152,7 @@ ul {
 }
 
 .speaker-list li {
-  margin: 0 15px;
+  margin: 15px;
   display: flex;
 }
 
@@ -236,15 +236,16 @@ ul {
   padding: 50px 15px;
 }
 
-.past-conference h2 { 
+.past-conference h2 {
   margin: 15px;
 }
 
-.past-conference p { 
+.past-conference p {
   margin: 15px;
   font-size: 1.5rem;
   width: 80%;
 }
+
 .past-conf {
   width: 90%;
   margin: 25px 0;
@@ -284,4 +285,33 @@ ul {
 .past-conf p {
   color: #fff;
   font-size: 1.5rem;
+}
+
+/* PARTNERS SECTION */
+.partners {
+  padding: 50px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #272a31;
+}
+
+.partners h2 {
+  color: #fff;
+  margin: 15px;
+}
+
+.partner-list {
+  width: 85%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 15px 0;
+}
+
+.partner-list img {
+  filter: grayscale(100%) contrast(30%);
+  height: 50px;
+  width: auto;
+  margin: 15px;
 }
