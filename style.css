@@ -202,3 +202,28 @@ ul {
 .contact .page-title {
   margin: 20px 0;
 }
+
+/* LOGO SECTION */
+.conference-logo {
+  padding: 50px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 2px solid #d3d3d3;
+}
+
+.conference-logo h2 {
+  margin: 15px 0;
+}
+
+.logo-info {
+  width: 80%;
+  margin: 25px;
+}
+
+.conference-logo img {
+  margin: 25px auto;
+  border: 1px solid #d3d3d3;
+  padding: 20px 50px;
+  width: 90%;
+}
