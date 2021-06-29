@@ -187,3 +187,18 @@ ul {
   color: #ec5242;
   margin-left: 5px;
 }
+
+/* CONTACT SECTION */
+.contact {
+  padding: 50px 25px;
+  background: url("./images/background.png");
+}
+
+.contact .intro {
+  background: #fff;
+  margin: 25px 0;
+}
+
+.contact .page-title {
+  margin: 20px 0;
+}
