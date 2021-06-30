@@ -77,8 +77,7 @@ h2 {
   background-position: center;
 }
 
-.page-title,
-.page-title span {
+.page-title {
   font-size: 3.5rem;
   font-weight: 900;
   line-height: 1.1em;
@@ -394,7 +393,11 @@ a[href*='mailto'] {
   margin: 3px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
+  .page-title {
+    font-size: 5rem;
+  }
+
   .mobile-nav {
     display: none;
   }
@@ -474,5 +477,39 @@ a[href*='mailto'] {
 
   .current {
     color: #ec5242 !important;
+  }
+
+  /* MAIN SECTION */
+  .programs {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .programs li {
+    padding: 20px 20px;
+    padding-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 25% 25% 50%;
+    align-items: start;
+    margin: 15px 3px;
+    text-align: center;
+  }
+
+  .programs li p,
+  .programs li h3 {
+    font-size: 0.9rem;
+    margin: 0 auto 20px;
+  }
+
+  .main a.btn {
+    display: none;
+  }
+
+  .main .see-btn {
+    color: #d3d3d3;
+    font-size: 0.8rem;
+    text-decoration: underline;
+    margin: 25px auto 45px;
   }
 }
