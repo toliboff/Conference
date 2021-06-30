@@ -78,6 +78,7 @@ function speakerMaker(num) {
                           </div>
                         </li>`).join('');
 }
+
 if (!document.location.href.includes('about.html')) {
   const speakerHTML = speakerMaker(speakerCount);
   speakerList.innerHTML = speakerHTML;
