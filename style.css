@@ -419,6 +419,8 @@ a[href*='mailto'] {
 
 @media (min-width: 769px) {
   .desktop-navigation {
+    display: flex;
+    flex-direction: column;
     position: fixed;
     width: 100%;
     background-color: #fff;
@@ -525,6 +527,11 @@ a[href*='mailto'] {
     border: 1px solid transparent;
   }
 
+  .past-conf li {
+    padding: 15px;
+    height: 250px;
+  }
+
   .programs li:hover {
     border: 1px solid #fff;
   }
@@ -554,13 +561,16 @@ a[href*='mailto'] {
     height: 60px;
   }
 
-  .desktop-navigation {
-    display: flex;
-    flex-direction: column;
-  }
-
   .current {
     color: #ec5242 !important;
+  }
+
+  .past-conf h3 {
+    font-size: 2rem;
+  }
+
+  .past-conf p {
+    font-size: 0.9rem;
   }
 
   /* MAIN SECTION */
@@ -615,18 +625,6 @@ a[href*='mailto'] {
   .past-conf {
     display: flex;
     flex-direction: row;
-  }
-
-  .past-conf li {
-    padding: 15px;
-    height: 250px;
-  }
-
-  .past-conf h3 {
-    font-size: 2rem;
-  }
-  .past-conf p {
-    font-size: 0.9rem;
   }
 
   .dark {
