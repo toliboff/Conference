@@ -3,10 +3,10 @@
 # Conference Website
 
 > Meetups and professional conferences have grown into every possible industry around the world. The Internet makes it much easier for people to connect and attend these conferences. 
-The goal of a conference website is two-fold:
-
-Inform & spread awareness
-Capture ticket sales
+> 
+>The goal of a conference website is two-fold: 
+>1. Inform & spread awareness
+>2. Capture ticket sales
 
 ## Built With
 
@@ -60,8 +60,8 @@ Give a ⭐️ if you like this project!
 * [Original design idea by Cindy Shin in Behance.](https://www.behance.net/adagio07)
 * [ Creative Commons license of the design.](https://creativecommons.org/licenses/by-nc/4.0/)
 * [GitHub](https://www.github.com)
-* [FontAwesomeIcons](https://fontawesome.com)
-* [Fonts](https://fonts.google.com)
+* [FontAwesome Icons](https://fontawesome.com)
+* [Google Fonts](https://fonts.google.com)
 * [Microverse](https://microverse.org)
 
 
