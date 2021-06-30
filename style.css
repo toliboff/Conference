@@ -78,6 +78,7 @@ h2 {
 }
 
 .page-title {
+  font-family: "Cocogoose", sans-serif;
   font-size: 3.5rem;
   font-weight: 900;
   line-height: 1.1em;
@@ -105,10 +106,15 @@ h2 {
 }
 
 .date {
-  font-size: 2.5rem;
+  font-family: "Cocogoose", sans-serif;
+  font-size: 2.2rem;
   font-weight: 900;
   color: #4e4e50;
   margin: 10px 0;
+}
+
+.place {
+  color: #606061;
 }
 
 /* MAIN SECTION */
@@ -137,7 +143,7 @@ h2 {
   border-color: #d3d3d3;
   align-self: flex-start;
   width: 25px;
-  margin: 15px 0;
+  margin: 5px 0;
 }
 
 .programs {
@@ -237,7 +243,8 @@ h2 {
 /* CONTACT SECTION */
 .contact {
   padding: 75px 25px;
-  background: url("./images/background.png");
+  background: url("./images/background.png") no-repeat;
+  background-size: cover;
 }
 
 .contact .intro {
@@ -247,6 +254,7 @@ h2 {
 
 .contact .page-title {
   margin: 20px 0;
+  font-size: 2.7rem;
 }
 
 .contact-us {
@@ -311,8 +319,11 @@ a[href*='mailto'] {
 .past-conf li {
   margin: 25px 15px;
   width: 100%;
-  padding: 15%;
+  padding: 15% 5%;
   color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .past-conf li:nth-child(1) {
@@ -322,6 +333,7 @@ a[href*='mailto'] {
       rgba(255, 0, 0, 0.45)
     ),
     url("./images/WIA_2019.jpg");
+  background-size: cover;
 }
 
 .past-conf li:nth-child(2) {
@@ -331,6 +343,7 @@ a[href*='mailto'] {
       rgba(255, 0, 0, 0.45)
     ),
     url("./images/WIA_2020-1.jpg");
+  background-size: cover;
 }
 
 .past-conf h3 {
@@ -393,9 +406,38 @@ a[href*='mailto'] {
   margin: 3px;
 }
 
+.dark {
+  background-color: #272a31;
+  justify-content: space-between;
+  padding: 50px 15%;
+}
+
+.dark .copyright span {
+  color: rgb(201, 199, 199);
+  font-size: 0.9rem;
+}
+
 @media (min-width: 769px) {
+  .desktop-navigation {
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 2px 5px  rgb(190, 190, 190);
+  }
+
   .page-title {
-    font-size: 5rem;
+    font-size: 3.5rem;
+  }
+
+  .contact .page-title {
+    margin-bottom: 60px;
+  }
+
+  .contact .intro {
+    margin: 20px 10%;
+    border: 2px solid #eceaea;
+    color: #797979;
+    padding: 40px;
   }
 
   .mobile-nav {
@@ -406,9 +448,32 @@ a[href*='mailto'] {
   .main,
   .speakers,
   .partner,
+  .contact,
+  .past-conference,
   .footer {
     padding-left: 10%;
     padding-right: 10%;
+  }
+
+  .home,
+  .contact {
+    padding-top: 130px;
+  }
+
+  .conference-logo {
+    padding: 30px 20%;
+  }
+
+  .conference-logo img {
+    width: 50%;
+  }
+
+  .more-btn,
+  .more-btn i {
+    width: 25%;
+    margin: 15px auto;
+    cursor: pointer;
+    font-size: 0.9rem;
   }
 
   .desktop-menu a {
@@ -448,6 +513,22 @@ a[href*='mailto'] {
     padding: 0 10%;
   }
 
+  .programs li {
+    padding: 20px 20px;
+    padding-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 25% 25% 50%;
+    align-items: start;
+    margin: 15px 3px;
+    text-align: center;
+    border: 1px solid transparent;
+  }
+
+  .programs li:hover {
+    border: 1px solid #fff;
+  }
+
   .desktop-menu li:nth-child(1) {
     margin-right: auto;
   }
@@ -464,6 +545,9 @@ a[href*='mailto'] {
     border: 4px solid #ec5242;
     padding: 5px 10px;
     color: #ec5242;
+    width: 20px;
+    overflow: hidden;
+    height: 60px;
   }
 
   .desktop-menu img {
@@ -485,17 +569,6 @@ a[href*='mailto'] {
     grid-template-columns: repeat(5, 1fr);
   }
 
-  .programs li {
-    padding: 20px 20px;
-    padding-top: 40px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 25% 25% 50%;
-    align-items: start;
-    margin: 15px 3px;
-    text-align: center;
-  }
-
   .programs li p,
   .programs li h3 {
     font-size: 0.9rem;
@@ -511,5 +584,59 @@ a[href*='mailto'] {
     font-size: 0.8rem;
     text-decoration: underline;
     margin: 25px auto 45px;
+  }
+
+  /* SPEAKERS SECTION */
+  .speaker-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .speaker-avatar {
+    width: 40%;
+    padding: 10px;
+  }
+
+  .speaker-info {
+    color: #4e4e50;
+    font-size: 0.8rem;
+    margin-top: 0;
+  }
+
+  .more-btn:hover {
+    background-color: #272a31;
+    color: #fff;
+  }
+
+  .partner-list img:hover {
+    filter: none;
+  }
+
+  .past-conf {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .past-conf li {
+    padding: 15px;
+    height: 250px;
+  }
+
+  .past-conf h3 {
+    font-size: 2rem;
+  }
+  .past-conf p {
+    font-size: 0.9rem;
+  }
+
+  .dark {
+    background-color: #272a31;
+    justify-content: space-between;
+    padding: 50px 15%;
+  }
+
+  .dark .copyright span {
+    color: rgb(201, 199, 199);
+    font-size: 0.9rem;
   }
 }
