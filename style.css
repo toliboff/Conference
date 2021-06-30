@@ -79,7 +79,7 @@ h2 {
 
 .page-title {
   font-family: "Cocogoose", sans-serif;
-  font-size: 3.5rem;
+  font-size: 2.7rem;
   font-weight: 900;
   line-height: 1.1em;
   color: #ec5242;
@@ -107,7 +107,7 @@ h2 {
 
 .date {
   font-family: "Cocogoose", sans-serif;
-  font-size: 2.2rem;
+  font-size: 1.2rem;
   font-weight: 900;
   color: #4e4e50;
   margin: 10px 0;
@@ -558,7 +558,7 @@ a[href*='mailto'] {
   }
 
   .desktop-menu img {
-    height: 60px;
+    height: 50px;
   }
 
   .current {
