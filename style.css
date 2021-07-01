@@ -244,7 +244,7 @@ h2 {
   align-self: flex-start;
   padding: 10px;
   width: 40%;
-  background: url("/images/transparent_bg.png") no-repeat;
+  background: url("images/transparent_bg.png") no-repeat;
   background-size: 50%;
   flex-grow: 0;
 }
@@ -676,6 +676,10 @@ a[href*='mailto'] {
     margin-top: 0;
   }
 
+  .more-btn {
+    display: none;
+  }
+
   .more-btn:hover {
     background-color: #272a31;
     color: #fff;
@@ -700,4 +704,5 @@ a[href*='mailto'] {
     color: rgb(201, 199, 199);
     font-size: 0.9rem;
   }
+
 }
