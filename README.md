@@ -30,8 +30,8 @@ To get a local copy up and running follow these simple example steps.
   - NodeJS
 ### Setup
 - Make sure you have `Node NPM` installed on your computer
-- Clone or download this repo on your machine
-- Enter project directory
+- Clone or download this repo on your machine: `git clone https://github.com/Conference.git`
+- Enter project directory with command `cd Conference`
 ### Install
 - Run `npm install`
 ### Usage

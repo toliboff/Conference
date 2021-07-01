@@ -1,5 +1,5 @@
 const menuBar = document.getElementById('menu-bar');
-const mobileMenu = document.getElementById('mobile-menu');
+const mobileMenu = document.getElementById('menu');
 const closeButton = document.getElementById('close');
 
 menuBar.addEventListener('click', () => {

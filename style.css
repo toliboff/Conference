@@ -1,4 +1,3 @@
-/* colors: #272a31-dark, #ec5242 - orange, #d3d3d3 - lightgrey */
 * {
   margin: 0;
   padding: 0;
@@ -29,20 +28,45 @@ h2 {
   position: relative;
 }
 
-.desktop-navigation {
+.settings {
   display: none;
 }
 
-.mobile-nav {
-  display: flex;
-  padding: 15px;
-  font-size: 2.5rem;
-  position: fixed;
-  width: 100%;
-  background: url('./images/background.png');
+.fa-bars {
+  padding: 10px;
 }
 
-.mobile-menu {
+.past-conf li {
+  margin: 25px 15px;
+  width: 100%;
+  padding: 15% 5%;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.speaker-list li {
+  margin: 20px;
+  display: flex;
+}
+
+.programs li {
+  background-color: rgba(167, 167, 167, 0.171);
+  padding: 20px 20px;
+  display: grid;
+  grid-template-columns: 1fr 2fr 3fr;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.menu-bar {
+  position: fixed;
+  width: 100%;
+  background: url('images/background.png');
+}
+
+.menu {
   display: none;
   flex-direction: column;
   position: fixed;
@@ -53,24 +77,32 @@ h2 {
   padding: 15px;
 }
 
-.mobile-menu li {
-  /* margin: 15px 0; */
+.menu a {
+  color: #fff;
+  padding: 5px;
+  font-size: 1.5rem;
+  display: block;
+}
+
+.menu li {
+  color: #fff;
+  padding: 5px;
+  margin-bottom: 5px;
   border-bottom: 1px solid #ec5242;
-  padding: 0;
+}
+
+.menu li:first-child {
+  border-bottom: none;
+}
+
+.desktop-menu {
+  display: none;
 }
 
 .close {
   color: #ec5242;
   font-size: 2rem;
   margin-bottom: 15px;
-}
-
-.mobile-menu a {
-  color: #c9c7c7;
-  font-size: 2rem;
-  padding: 15px 0;
-
-  /* margin: 15px; */
 }
 
 .home {
@@ -156,15 +188,6 @@ h2 {
   margin: 15px auto;
 }
 
-.programs li {
-  background-color: rgba(167, 167, 167, 0.171);
-  padding: 20px 20px;
-  display: grid;
-  grid-template-columns: 1fr 2fr 3fr;
-  align-items: center;
-  margin: 15px 0;
-}
-
 .program-icon {
   font-size: 2.2rem;
   display: flex;
@@ -210,11 +233,6 @@ h2 {
 
 .speaker-list {
   margin: 25px 0;
-}
-
-.speaker-list li {
-  margin: 20px;
-  display: flex;
 }
 
 .speaker {
@@ -340,16 +358,6 @@ a[href*='mailto'] {
   margin: 25px 0;
 }
 
-.past-conf li {
-  margin: 25px 15px;
-  width: 100%;
-  padding: 15% 5%;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .past-conf li:nth-child(1) {
   background:
     linear-gradient(
@@ -447,6 +455,20 @@ a[href*='mailto'] {
 }
 
 @media (min-width: 768px) {
+  .mobile-menu {
+    display: none !important;
+  }
+
+  .desktop-menu {
+    display: block;
+    padding: 0;
+    height: 40px;
+  }
+
+  .menu li {
+    border-bottom: none;
+  }
+
   .desktop-navigation {
     display: flex;
     flex-direction: column;
@@ -457,7 +479,12 @@ a[href*='mailto'] {
   }
 
   .page-title {
-    font-size: 3rem;
+    font-size: 2.7rem;
+  }
+
+  .intro {
+    width: 70%;
+    font-size: 0.9rem;
   }
 
   .date {
@@ -475,10 +502,6 @@ a[href*='mailto'] {
     padding: 40px;
   }
 
-  .mobile-nav {
-    display: none;
-  }
-
   .home,
   .main,
   .speakers,
@@ -492,7 +515,11 @@ a[href*='mailto'] {
 
   .home,
   .contact {
-    padding-top: 130px;
+    padding-top: 180px;
+  }
+
+  .home {
+    min-height: 100vh;
   }
 
   .conference-logo {
@@ -511,10 +538,22 @@ a[href*='mailto'] {
     font-size: 0.9rem;
   }
 
-  .desktop-menu a {
+  .menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 10%;
+    flex-direction: row;
+    position: static;
+    height: auto;
+    background: #fff;
+  }
+
+  .menu a {
     color: #918e8e;
     font-size: 0.8rem;
-    margin: 0 10px;
+    margin: 0 3px;
+    display: inline;
   }
 
   .settings a,
@@ -524,7 +563,7 @@ a[href*='mailto'] {
     font-size: 0.8rem;
   }
 
-  .desktop-menu a:hover {
+  .menu a:hover {
     color: #5a5858;
   }
 
@@ -539,13 +578,6 @@ a[href*='mailto'] {
   .settings a:hover,
   .settings i:hover {
     color: #ccc;
-  }
-
-  .desktop-menu {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 0 10%;
   }
 
   .programs li {
@@ -569,19 +601,16 @@ a[href*='mailto'] {
     border: 1px solid #fff;
   }
 
-  .desktop-menu li:nth-child(1) {
+  .menu li:nth-child(2) {
     margin-right: auto;
+    padding: 0;
   }
 
-  .desktop-menu li:nth-child(1) a {
-    margin: 0;
-  }
-
-  .desktop-menu li:last-child {
+  .menu li:last-child {
     margin-left: 20px;
   }
 
-  .desktop-menu li:last-child a {
+  .menu li:last-child a {
     border: 4px solid #ec5242;
     padding: 5px 10px;
     color: #ec5242;
@@ -590,8 +619,8 @@ a[href*='mailto'] {
     height: 60px;
   }
 
-  .desktop-menu img {
-    height: 50px;
+  .menu img {
+    height: 45px;
   }
 
   .current {
